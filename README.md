@@ -53,10 +53,10 @@ streamlit run scripts/app.py
 
 ## 🌟 Exemples de questions (réponses à calibrer encore):
 
-"Pourquoi la Tour Eiffel a été construite ?"→ 
-    "La Tour Eiffel a été construite pour l'exposition universelle de 1889, et fut construite à partir de 1882 pour remplacer une tour abandonnée. Elle était destinée à être la première tour de métal dans le monde, avec une hauteur de 324 mètres. La construction a coûté 12 millions de francs. 🗼✨"
-"C’est quoi la photosynthèse ?"→ 
-    "Photosynthèse est une réaction chimique, physico-chimique et biologique qui permet de produire de l'énergie et d'émerger du matériel à partir du carbonate de calcium (Ca2+) et du dioxyde de carbone (CO2), en produisant des molécules de glucose (Glc). Elle est réalisée par les plantes, les champignons, les algues et les bactéries.🌿💚"
+    "Pourquoi la Tour Eiffel a été construite ?" 
+        - "La Tour Eiffel a été construite pour l'exposition universelle de 1889, et fut construite à partir de 1882 pour remplacer une tour abandonnée. Elle était destinée à être la première tour de métal dans le monde, avec une hauteur de 324 mètres. La construction a coûté 12 millions de francs. 🗼✨"
+    "C’est quoi la photosynthèse ?" 
+        - "Photosynthèse est une réaction chimique, physico-chimique et biologique qui permet de produire de l'énergie et d'émerger du matériel à partir du carbonate de calcium (Ca2+) et du dioxyde de carbone (CO2), en produisant des molécules de glucose (Glc). Elle est réalisée par les plantes, les champignons, les algues et les bactéries.🌿💚"
 
 ## 📂 Structure du projet
 
