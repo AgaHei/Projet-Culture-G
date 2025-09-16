@@ -1,0 +1,35 @@
+# --- Environnements virtuels ---
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Fichiers et dossiers de cache ---
+.cache/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+
+# --- Modèles (trop gros pour GitHub) ---
+models/
+*.gguf
+*.bin
+*.pt
+*.safetensors
+
+# --- Données brutes ---
+data/La_Culture_Generale_Pour_Les_Nuls.pdf
+data/texte_brut.txt  # Si tu as une version non nettoyée
+
+# --- Fichiers temporaires et logs ---
+*.log
+*.swp
+*.swo
+
+# --- Fichiers spécifiques à Windows ---
+Thumbs.db
+desktop.ini
