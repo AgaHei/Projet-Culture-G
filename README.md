@@ -30,22 +30,22 @@
 
 
 1. Cloner le dépôt
-git clone https://github.com/AgaHei/Projet-Culture-G.git
-cd projet-culture-g
+    git clone https://github.com/AgaHei/Projet-Culture-G.git
+    cd projet-culture-g
 
-2. Créer un environnement virtuel (recommandé)
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-.\venv\Scripts\activate   # Windows
+2. Créer un environnement virtuel (recommandé):
+    - python -m venv venv
+    - source venv/bin/activate  # Linux/Mac
+    - .\venv\Scripts\activate   # Windows
 
 3. Installer les dépendances
-pip install -r requirements.txt --no-cache-dir
+    pip install -r requirements.txt --no-cache-dir
 
 4. Télécharger le modèle (optionnel)
-Le modèle TinyLlama se télécharge automatiquement à la première utilisation.
-(Si tu veux l’avoir en local pour éviter de re-télécharger :)
+    - Le modèle TinyLlama se télécharge automatiquement à la première utilisation.
+    - (Si tu veux l’avoir en local pour éviter de re-télécharger :)
 
-python scripts/download_model.py
+    - python scripts/download_model.py
 
 ## 🚀 Utilisation (à venir)
 Lancer le chatbot localement
@@ -60,33 +60,33 @@ streamlit run scripts/app.py
 
 ## 📂 Structure du projet
 
-projet-culture-g/
-├── data/
-│   ├── texte_nettoye.txt       # Texte extrait et nettoyé du livre
-│   └── faiss_index/            # Index FAISS pour la recherche sémantique
-│
-├── models/                     # Dossier pour le modèle (à télécharger)
-│   └── TinyLlama-1.1B-Chat-v1.0/  # Modèle local (optionnel)
-│
-├── notebooks/                  # Notebooks Jupyter pour les tests
-│   ├── 01_extraction.ipynb      # Nettoyage du texte
-│   ├── 02_embeddings.ipynb      # Génération des embeddings
-│   └── 03_test_chatbot.ipynb    # Tests interactifs
-│
-├── scripts/                    # Scripts Python pour le déploiement
-│   ├── extraction.py          # Extraction du texte
-│   ├── embeddings.py           # Génération des embeddings
-│   ├── rag_pipeline.py         # Pipeline RAG
-│   └── app.py                  # Interface Streamlit (à venir)
-│
-├── requirements.txt            # Dépendances Python
-└── README.md                   # Ce fichier
+    projet-culture-g/
+    ├── data/
+    │   ├── texte_nettoye.txt       # Texte extrait et nettoyé du livre
+    │   └── faiss_index/            # Index FAISS pour la recherche sémantique
+    │
+    ├── models/                     # Dossier pour le modèle (à télécharger)
+    │   └── TinyLlama-1.1B-Chat-v1.0/  # Modèle local (optionnel)
+    │
+    ├── notebooks/                  # Notebooks Jupyter pour les tests
+    │   ├── 01_extraction.ipynb      # Nettoyage du texte
+    │   ├── 02_embeddings.ipynb      # Génération des embeddings
+    │   └── 03_test_chatbot.ipynb    # Tests interactifs
+    │
+    ├── scripts/                    # Scripts Python pour le déploiement
+    │   ├── extraction.py          # Extraction du texte
+    │   ├── embeddings.py           # Génération des embeddings
+    │   ├── rag_pipeline.py         # Pipeline RAG
+    │   └── app.py                  # Interface Streamlit (à venir)
+    │
+    ├── requirements.txt            # Dépendances Python
+    └── README.md                   # Ce fichier
 
 ## 📚 Données
 
-Source : Livre "La Culture Générale Pour Les Nuls" de Florence Braunstein (Docteur ès lettres) et Jean-François Pépin (Agrégé d’histoire).
-Format : PDF nettoyé → data/texte_nettoye.txt (texte brut).
-Index FAISS : Généré à partir de chunks de 1000 caractères (avec chevauchement de 200 caractères) pour une recherche optimale.
+- Source : Livre "La Culture Générale Pour Les Nuls" de Florence Braunstein (Docteur ès lettres) et Jean-François Pépin (Agrégé d’histoire).
+- Format : PDF nettoyé → data/texte_nettoye.txt (texte brut).
+- Index FAISS : Généré à partir de chunks de 1000 caractères (avec chevauchement de 200 caractères) pour une recherche optimale.
 
 (Les données sont nettoyées pour supprimer les artefacts OCR et les mise en page inutiles.)
 
